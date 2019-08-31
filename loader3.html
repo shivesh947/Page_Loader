@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	#pack
+	{
+		margin-left: 45vw;
+		margin-top: 45vh;
+	}
+	#dd
+	{
+		height: 100px;
+		width: 100px;
+		background-color: black;
+		animation-name: balls;	
+   		animation-timing-function: ease-in-out;
+		animation-duration: 3s ;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+	}
+	#dd1
+	{
+		height: 100px;
+		width: 100px;
+		background-color: black;
+		animation-name: balls1;	
+   		animation-timing-function: ease-in-out;
+		animation-duration: 3s ;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+	}
+	@keyframes balls 
+	{
+    from{
+    	transform: scaleX(1.5);
+    }
+    to{
+    	transform: scaleX(0);
+    	
+    	}
+	}
+	@keyframes balls1
+	{
+    from{
+    	transform: scaleY(1.5);
+    }
+    to{
+    	transform: scaleX(0);
+    	
+    	}
+	}
+</style>
+<body>
+	<div id="pack">
+		<div id="dd">
+			<div id="dd1">
+			
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
