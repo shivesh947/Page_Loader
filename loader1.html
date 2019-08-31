@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	#pack
+	{
+	margin-top: 40vh;
+    margin-left: 25vw;
+	}
+	@media (max-width: 1000px)
+	{#pack{
+		margin-left: 15vw;
+		}
+	}
+	
+	.dd{
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		border-radius: 300px;
+		background-color: black;
+		display: inline-block;
+		animation-timing-function: ease-in-out;
+		animation-duration: 0.5s ;
+		animation-direction: alternate;;
+		animation-iteration-count: infinite;
+
+	}
+	.dd:nth-child(1)
+	{
+		margin-left: 100px;
+		margin-top: -20px;
+		animation-name: odd;	
+		background-color: #00CED1;	
+	}
+	.dd:nth-child(2)
+	{
+		margin-left: 200px;
+		margin-top: 20px;
+		animation-name: even;
+		background-color: #1E90FF;	
+	}
+	.dd:nth-child(3)
+	{
+		margin-left: 300px;
+		margin-top: -20px;
+		animation-name: odd;
+		background-color: #6495ED;	
+	}
+	.dd:nth-child(4)
+	{
+		margin-left: 400px;
+		margin-top: 20px;
+		animation-name: even;
+		background-color: #1E90FF;	
+	}
+	.dd:nth-child(5)
+	{
+		margin-left: 500px;
+		margin-top: -20px;
+		animation-name: odd;
+		background-color: #00BFFF;			
+	}
+	@keyframes even 
+	{
+    from{
+    	margin-top: 20px;
+    }
+    to{
+
+    	margin-top: -20px;
+    }
+}
+    @keyframes odd {
+    from{
+    	margin-top: -20px;
+    }
+    to{
+
+    	margin-top: 20px;
+    }
+}
+</style>
+<body>
+<div id="main">
+		<div id="pack">
+			<div class="dd" id="el1"></div>
+			<div class="dd" id="el2"></div>
+			<div class="dd" id="el3"></div>
+			<div class="dd" id="el4"></div>
+			<div class="dd" id="el5"></div>
+		</div>
+	</div>
+</body>
+</html>
