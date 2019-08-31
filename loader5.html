@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body{margin:0;}
+	#pack{height: 500px;width: 500px;border-radius: 400px;
+		animation-name: example;
+		animation-timing-function: ease-in-out;
+		animation-duration: 4s;
+  		animation-iteration-count: infinite;
+  		margin-top: 100px;
+  		margin-left: 450px;
+
+  	}
+  	 @media (max-width: 1200px)
+    {
+    	#pack{    margin-top: 35vh;
+    margin-left: 24vw;}
+    }
+	.dd{
+		height: 100px;
+		width: 100px;
+		background-color: red;
+		border-radius: 100px;
+		display: inline-block;
+	}
+	#el1
+	{
+           transform: translate(200px, 30px);
+	}
+	#el2
+	{
+           transform: translate(243px, 123px);
+	}
+	#el3
+	{
+
+           transform:translate(82px, 295px);
+	}
+	#el4
+	{
+           transform:translate(-203px, 296px);
+	}
+	#el5
+	{
+           transform:translate(60px, 23px);
+	}
+	@keyframes example {
+    from{
+    	transform: rotate(0deg);
+    }
+    to{
+
+    	transform: rotate(360deg);
+    }
+
+</style>
+<body>
+	<div id="main">
+		<div id="pack">
+			<div class="dd" id="el1"></div>
+			<div class="dd" id="el2"></div>
+			<div class="dd" id="el3"></div>
+			<div class="dd" id="el4"></div>
+			<div class="dd" id="el5"></div>
+		</div>
+	</div>
+
+</body>
+</html>
