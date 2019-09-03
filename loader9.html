@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	.dd
+	{
+		display: inline-flex;
+		height: 120px;
+		width: 120px;
+		border-radius: 300px;
+		margin-left: -20px;
+		margin-top: -20px;
+		animation-name: example;
+		animation-timing-function: ease-in-out;
+		animation-duration: 4s;
+		animation-direction: alternate;
+  		animation-iteration-count: infinite;
+	}
+	#dd1
+	{
+		background-color: #ff00007a;
+	}
+	#dd2
+	{
+		background-color: #ffff00cc;
+	}
+	#dd3
+	{
+		background-color: #0080009c;
+	}
+	#dd4
+	{
+		background-color: #0000ffab;
+	}
+	#main
+	{
+		margin-left: 42vw;
+		margin-top: 40vh;
+	}
+	@keyframes example {
+    from{
+    	transform: scale(1.5);
+    }
+    to{
+
+    	transform: scale(1);
+    }
+	}
+</style>
+<body>
+<div id="main">
+	<div id="dd1" class="dd"></div>
+	<div id="dd2" class="dd"></div><br>
+	<div id="dd3" class="dd"></div>
+	<div id="dd4" class="dd"></div>
+
+</div>
+</body>
+</html>

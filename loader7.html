@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body
+	{
+		margin:0;
+		background-image: url(road.jpg);
+		background-size: 100vw 100vh;
+		overflow: hidden;
+		background-repeat: no-repeat;
+    	position: fixed;
+	}
+	#cr
+	{
+		margin-top: 60vh;
+		height: 150px;
+		width:400px;
+		animation-name: example1;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		display: fixed;
+  	
+	}
+	@keyframes example1 {
+    from{
+    	margin-left: 0vw;
+    }
+    to{
+    	margin-left: 100vw;
+    }
+	}
+</style>
+<body>
+<div>
+<img src="car.png" id="cr">
+</div>
+</body>
+</html>

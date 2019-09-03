@@ -4,68 +4,80 @@
 	<title></title>
 </head>
 <style type="text/css">
-	body{margin:0;}
-	#pack{height: 500px;width: 500px;border-radius: 400px;
-		animation-name: example;
+	body{margin: 0;}
+	.dd
+	{
+		height: 8vh;
+		width: 10vw;
 		animation-timing-function: ease-in-out;
-		animation-duration: 4s;
-  		animation-iteration-count: infinite;
-  		margin-top: 100px;
-  		margin-left: 450px;
-
-  	}
-  	 @media (max-width: 1200px)
-    {
-    	#pack{    margin-top: 35vh;
-    margin-left: 24vw;}
-    }
-	.dd{
-		height: 100px;
-		width: 100px;
+		animation-duration: 2s ;
+		animation-direction: alternate;;
+		animation-iteration-count: infinite;
+		
+	}
+	#dd1
+	{
+		background-color: yellow;
+		margin-left: -5vw;
+		animation-name: odd;
+	}
+	#dd2
+	{
 		background-color: red;
-		border-radius: 100px;
-		display: inline-block;
+		margin-left: 5vw;
+		animation-name: even;
 	}
-	#el1
+	#dd3
 	{
-           transform: translate(200px, 30px);
+		background-color: green;
+		margin-left: -5vw;
+		animation-name: odd;
 	}
-	#el2
+	#dd4
 	{
-           transform: translate(243px, 123px);
+		background-color: pink;
+		margin-left: 5vw;
+		animation-name: even;
 	}
-	#el3
+	#dd5
 	{
-
-           transform:translate(82px, 295px);
+		background-color: blue;
+		margin-left: -5vw;
+		animation-name: odd;
 	}
-	#el4
+	#main
 	{
-           transform:translate(-203px, 296px);
+		margin-left: 45vw;
+		margin-top: 30vh;
 	}
-	#el5
+	@keyframes even 
 	{
-           transform:translate(60px, 23px);
-	}
-	@keyframes example {
     from{
-    	transform: rotate(0deg);
+    	margin-left:5vw;
     }
     to{
 
-    	transform: rotate(360deg);
+    	margin-left: -5vw;
     }
+	}
+    @keyframes odd {
+    from{
+    	margin-left: -5vw;
+    }
+    to{
 
+    	margin-left:5vw;
+    }
+	}
 </style>
 <body>
 	<div id="main">
-		<div id="pack">
-			<div class="dd" id="el1"></div>
-			<div class="dd" id="el2"></div>
-			<div class="dd" id="el3"></div>
-			<div class="dd" id="el4"></div>
-			<div class="dd" id="el5"></div>
-		</div>
+		<div id="dd1" class="dd"></div>
+		<div id="dd2" class="dd"></div>
+		<div id="dd3" class="dd"></div>
+		<div id="dd4" class="dd"></div>
+		<div id="dd5" class="dd"></div>
+
 	</div>
 
 </body>
